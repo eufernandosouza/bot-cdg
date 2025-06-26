@@ -1,5 +1,5 @@
 const openai = require("openai");
-openai.apiKey = process.env.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;
+openai.apiKey = process.env.process.env.OPENAI_API_KEY;
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
